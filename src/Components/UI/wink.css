@@ -1,0 +1,61 @@
+.face_outer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--yellow);
+  display: grid;
+  place-items: center;
+}
+.face_inner {
+  width: 90%;
+  height: 90%;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.eyes {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left_eye {
+  height: 100%;
+  width: 35%;
+  aspect-ratio: 1 /1;
+  background-color: var(--yellow);
+}
+.right_eye {
+  height: 100%;
+  width: 35%;
+  aspect-ratio: 1 /1;
+  background-color: var(--yellow);
+  animation: wink 4s infinite ease;
+}
+.mouth {
+  width: 60%;
+  height: 20%;
+  background: var(--yellow);
+}
+
+@keyframes wink {
+  10% {
+    height: 0;
+  }
+  12% {
+    height: 100%;
+  }
+  97% {
+    height: 100%;
+  }
+  98% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
+  }
+}

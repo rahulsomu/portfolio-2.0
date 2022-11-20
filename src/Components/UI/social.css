@@ -1,0 +1,24 @@
+.social {
+  display: flex;
+  gap: 8px;
+}
+.social button {
+  outline: none;
+  border: none;
+  background: var(--yellow);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.253);
+}
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 2.2rem;
+  transition: 0.3s;
+}
+.social button:hover a {
+  font-size: 1.8rem;
+}
