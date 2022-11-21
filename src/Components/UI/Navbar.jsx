@@ -5,10 +5,16 @@ import { RiUserFill } from "react-icons/ri";
 import { IoIosApps } from "react-icons/io";
 import { SiGooglemessages } from "react-icons/si";
 import { MdDownload } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <motion.div
+      className="navbar"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 1 }}
+    >
       <button>
         <div className="button_text">Home</div>
         <a href="#hero">
@@ -44,7 +50,7 @@ const Navbar = () => {
           <p>Resume</p>
         </a>
       </button>
-    </div>
+    </motion.div>
   );
 };
 

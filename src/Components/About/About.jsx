@@ -1,17 +1,33 @@
 import React from "react";
 import Wink from "../UI/Wink";
 import "./about.css";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="about_section">
-      <div className="about_section_header">
+      <motion.div
+        className="about_section_header"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.2 }}
+      >
         <p>About Me.</p>
-      </div>
-      <div className="about_section_content">
-        <div className="wink">
+      </motion.div>
+      <motion.div
+        className="about_section_content"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.div
+          className="wink"
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 0.4 }}
+        >
           <Wink />
-        </div>
+        </motion.div>
         <p>
           Hii! I am <b>Rahul Rana</b>. Welcome to my page first of all.I would
           love to share my journey and how things are going right now.I
@@ -36,7 +52,7 @@ const About = () => {
           the boundaries more and more each time, always trying to stay at the
           fore front of cutting edge technology.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -3,13 +3,19 @@ import "./contact.css";
 import Social from "../UI/Social";
 import { MdCall } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <div className="contact_section">
-      <div className="contact_section_header">
+      <motion.div
+        className="contact_section_header"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.2 }}
+      >
         <p>Contact Me.</p>
-      </div>
+      </motion.div>
       <div className="contact_section_content">
         <div className="form">
           <form action="">
@@ -30,8 +36,19 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="contact_info">
-          <div className="contact_info_wrapper">
+        <motion.div
+          className="contact_info"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            className="contact_info_wrapper"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.2, delay: 0.5 }}
+          >
             <div className="contact_details">
               <MdCall className="icon" />
               <p>+918674917664</p>
@@ -47,8 +64,8 @@ const Contact = () => {
             <div className="social">
               <Social />
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

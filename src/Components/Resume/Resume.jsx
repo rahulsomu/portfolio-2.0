@@ -2,13 +2,19 @@ import React from "react";
 import "./resume.css";
 import resume from "../../Assets/resume.jpg";
 import { MdDownload } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
     <div className="resume_section">
-      <div className="resume_section_header">
+      <motion.div
+        className="resume_section_header"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <p>Resume.</p>
-      </div>
+      </motion.div>
       <div className="resume_section_content">
         <div className="download_buttons">
           <p>Download Resume</p>
@@ -29,9 +35,14 @@ const Resume = () => {
             </a>
           </button>
         </div>
-        <div className="resume_image">
+        <motion.div
+          className="resume_image"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <img src={resume} alt="" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
