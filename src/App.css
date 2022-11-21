@@ -1,5 +1,7 @@
 .App {
   position: relative;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 15vh;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -16,25 +18,30 @@
 
 #hero {
   height: 100vh;
+  scroll-snap-align: start;
 }
 #about {
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 #projects {
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 #contact {
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 #resume {
   min-height: 100vh;
   overflow-x: hidden;
+  scroll-snap-align: start;
 }
 footer {
   background-color: var(--black);
   display: flex;
   height: max-content;
-  padding: 10px 0;
+  padding: 3rem 0;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
@@ -49,7 +56,8 @@ footer {
 .copyright {
   font-size: 1rem;
   position: absolute;
-  right: 5px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 5px;
   font-weight: 300;
 }

@@ -31,7 +31,7 @@ function App() {
         <Resume />
       </section>
       <footer>
-        <p>Thank you for Visiting!</p>
+        <p>Thanks for Visiting!</p>
         <div className="wink2">
           <Wink />
         </div>

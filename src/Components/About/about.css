@@ -3,7 +3,7 @@
   background-color: var(--black);
   position: relative;
   padding-left: 10rem;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 .about_section::before {
   content: "";
@@ -30,6 +30,7 @@
   padding: 6rem;
   position: relative;
   margin-top: 10px;
+  max-width: 1300px;
 }
 .about_section_content p {
   font-size: 1.6rem;
@@ -42,12 +43,16 @@
   width: 80px;
 }
 @media (max-width: 600px) {
+  .about_section {
+    padding-left: 7rem;
+  }
   .about_section_content {
-    padding: 3rem;
+    padding: 2rem;
     padding-top: 4rem;
   }
   .about_section_content p {
     font-size: 1.2rem;
+    word-spacing: 4px;
   }
   .wink {
     position: absolute;

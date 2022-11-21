@@ -67,8 +67,9 @@
   font-size: 1.6rem;
 }
 .form form input[type="text"]:focus,
-.form form input[type="email"]:focus {
-  border: 1px solid var(--yellow);
+.form form input[type="email"]:focus,
+textarea:focus {
+  border: 1px solid var(--yellow) !important;
   outline: none;
 }
 
@@ -130,6 +131,9 @@
   font-size: 2rem;
 }
 @media (max-width: 1000px) {
+  .contact_section {
+    padding-left: 7rem;
+  }
   .contact_section_content {
     flex-direction: column;
     max-width: 60rem;
@@ -139,23 +143,17 @@
   .form {
     width: 100%;
     aspect-ratio: 1/1;
+    padding: 3rem;
   }
   .contact_info {
     width: 100%;
     aspect-ratio: 1/1;
     background-color: var(--gray);
+    padding: 3rem;
   }
   .contact_section_content {
     display: flex;
     justify-content: flex-end;
-  }
-}
-@media (max-width: 1000px) {
-  .form {
-    padding: 3rem;
-  }
-  .contact_info {
-    padding: 3rem;
   }
   .form form p {
     color: var(--black);

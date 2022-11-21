@@ -4,8 +4,9 @@
   padding-bottom: 10rem;
 }
 .review_section_header {
-  font-size: 3vw;
+  font-size: 1.6rem;
   font-weight: 600;
+  text-align: center;
 }
 .reviews_container {
   margin-top: 4rem;
@@ -59,7 +60,7 @@
 
 @media (max-width: 600px) {
   .review_section {
-    padding-left: 10rem;
+    padding-left: 7rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
@@ -72,6 +73,7 @@
   }
   .reviews_container {
     margin-top: 2rem;
+    padding-right: 1rem;
   }
   .reviews_container::-webkit-scrollbar {
     height: 0px;
