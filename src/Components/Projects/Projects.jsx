@@ -13,13 +13,7 @@ const Projects = () => {
       >
         <p>Projects.</p>
       </motion.div>
-      <motion.div
-        className="projects_section_content"
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-      >
+      <div className="projects_section_content">
         <div className="content_header">
           <p>Some Featured Projects</p>
           <button>View All</button>
@@ -165,7 +159,7 @@ const Projects = () => {
         <div className="grid_footer">
           <button>View All</button>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
