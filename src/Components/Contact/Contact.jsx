@@ -38,7 +38,11 @@ const Contact = () => {
             </div>
             <div className="contact_details">
               <MdEmail className="icon" />
-              <p>rana.rahul.1998@gmail.com</p>
+              <p>
+                <a href="mailto:someone@example.com">
+                  rana.rahul.1998@gmail.com
+                </a>
+              </p>
             </div>
             <div className="social">
               <Social />

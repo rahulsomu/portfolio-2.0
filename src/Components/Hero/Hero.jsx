@@ -20,11 +20,21 @@ const Hero = () => {
             <p>Developer,designer and creator of this website.</p>
             <div className="content_info_buttons">
               <button>
-                <MdDownload />
-                <p>Download Resume</p>
+                <a
+                  href="https://drive.google.com/file/d/1IEY44YDCmYCUbZClrn2GI1IyS1wkDHT0/view?usp=share_link"
+                  target="_"
+                >
+                  <MdDownload />
+                  <p>Download Resume</p>
+                </a>
               </button>
               <button>
-                <SiUpwork style={{ fontSize: "20px" }} />
+                <a
+                  href="https://www.upwork.com/freelancers/~011476ab5fba8dd7dc"
+                  target="_"
+                >
+                  <SiUpwork style={{ fontSize: "20px" }} />
+                </a>
               </button>
             </div>
           </div>

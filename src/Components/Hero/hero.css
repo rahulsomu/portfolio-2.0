@@ -81,10 +81,27 @@
   transition: 0.3s;
   white-space: nowrap;
 }
+.content_info_buttons button a {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow) !important;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  text-decoration: none;
+  gap: 10px;
+}
 .content_info_buttons button:hover {
   background: var(--yellow);
-  color: var(--black);
+  color: var(--black) !important;
 }
+.content_info_buttons button:hover > a {
+  color: var(--black) !important;
+}
+
 .content_right {
   width: 40%;
   display: flex;

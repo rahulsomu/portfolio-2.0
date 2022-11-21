@@ -75,6 +75,17 @@
   position: relative;
   overflow: hidden;
 }
+.details_info {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(0, 0, 0, 0.384);
+  color: white;
+  padding: 5px;
+  font-size: 8px;
+  font-weight: 300;
+  display: none;
+}
 .grid_item:hover .project_image {
   filter: blur(100px);
 }
@@ -153,6 +164,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
+  }
+  .details_info {
+    display: block;
   }
   .grid_footer {
     display: flex;

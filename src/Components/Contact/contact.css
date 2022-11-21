@@ -114,6 +114,10 @@ textarea:focus {
   align-items: center;
   margin-bottom: 10px;
 }
+.contact_details p a {
+  text-decoration: none;
+  color: white;
+}
 .message {
   height: 12rem !important;
   width: 100%;

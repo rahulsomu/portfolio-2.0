@@ -6,7 +6,7 @@
 .review_section_header {
   font-size: 1.6rem;
   font-weight: 600;
-  text-align: center;
+  text-align: start;
 }
 .reviews_container {
   margin-top: 4rem;
@@ -81,5 +81,8 @@
   .review_desc {
     font-size: 1.2rem;
     font-weight: 300;
+  }
+  .review_section_header {
+    text-align: center;
   }
 }

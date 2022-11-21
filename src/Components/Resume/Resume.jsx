@@ -13,12 +13,20 @@ const Resume = () => {
         <div className="download_buttons">
           <p>Download Resume</p>
           <button>
-            <MdDownload />
-            Download as Pdf
+            <a
+              href="https://drive.google.com/file/d/1IEY44YDCmYCUbZClrn2GI1IyS1wkDHT0/view?usp=share_link"
+              target="_"
+            >
+              {" "}
+              <MdDownload />
+              Download as Pdf
+            </a>
           </button>
           <button>
-            <MdDownload />
-            Download as Image
+            <a href={resume} download={`rahul's resume`}>
+              <MdDownload />
+              Download as Image
+            </a>
           </button>
         </div>
         <div className="resume_image">

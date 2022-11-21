@@ -14,6 +14,7 @@ const Projects = () => {
         </div>
         <div className="projects_grid">
           <div className="grid_item">
+            <p className="details_info">Click to View Details</p>
             <div className="project_image">
               <img
                 src="https://images.unsplash.com/photo-1635791668686-d7fc87fec783?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
