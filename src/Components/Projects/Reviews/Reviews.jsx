@@ -27,14 +27,14 @@ const Reviews = () => {
           </div>
           <div className="review_desc">
             <p>
-              Rahul worked on my website www.appliceasy.com as a graphic
+              " Rahul worked on my website www.appliceasy.com as a graphic
               designer / front end developer. His skills are outstanding! Very
               good understanding of what I wanted and strong communication
               skills. I can definitely recommend him. Rahul worked on my website
               www.appliceasy.com as a graphic designer / front end developer.
               His skills are outstanding! Very good understanding of what I
               wanted and strong communication skills. I can definitely recommend
-              him.
+              him."
             </p>
           </div>
         </motion.div>
