@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <section id="hero">
+      <section id="home">
         <Hero />
       </section>
       <section id="about">

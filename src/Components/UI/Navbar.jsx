@@ -17,7 +17,7 @@ const Navbar = () => {
     >
       <button>
         <div className="button_text">Home</div>
-        <a href="#hero">
+        <a href="#home">
           <TiHome />
           <p>Home</p>
         </a>

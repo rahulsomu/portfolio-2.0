@@ -10,8 +10,8 @@ const Reviews = () => {
       <div className="reviews_container">
         <motion.div
           className="review"
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ scale: 0.7, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
           <div className="review_header">
@@ -40,8 +40,8 @@ const Reviews = () => {
         </motion.div>
         <motion.div
           className="review"
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ scale: 0.7, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
           <div className="review_header">
@@ -70,8 +70,8 @@ const Reviews = () => {
         </motion.div>
         <motion.div
           className="review"
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ scale: 0.7, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
           <div className="review_header">
@@ -100,8 +100,8 @@ const Reviews = () => {
         </motion.div>
         <motion.div
           className="review"
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ scale: 0.7, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
           <div className="review_header">
@@ -130,8 +130,8 @@ const Reviews = () => {
         </motion.div>
         <motion.div
           className="review"
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ scale: 0.7, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
           <div className="review_header">
@@ -160,8 +160,8 @@ const Reviews = () => {
         </motion.div>
         <motion.div
           className="review"
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ scale: 0.7, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
           <div className="review_header">

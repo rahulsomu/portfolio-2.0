@@ -29,7 +29,7 @@
 .resume_section_content {
   padding: 6rem;
   position: relative;
-  margin: 10px auto;
+  margin: 0 auto;
   max-height: 600px;
   display: flex;
   justify-content: space-between;
@@ -79,11 +79,12 @@
 }
 .resume_image {
   width: 50%;
-  overflow: hidden;
 
   display: flex;
   justify-content: center;
+  z-index: 99;
 }
+
 .resume_image img {
   height: 100%;
   object-fit: contain;
@@ -110,7 +111,7 @@
 
   .resume_image {
     width: 100%;
-    overflow: hidden;
+
     max-width: 600px;
     margin: 0 auto;
 
@@ -138,5 +139,8 @@
     max-width: 300px;
     padding: 2rem;
     margin: 0 auto;
+  }
+  .resume_image {
+    margin-top: 4rem;
   }
 }
