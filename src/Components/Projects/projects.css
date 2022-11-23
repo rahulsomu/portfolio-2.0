@@ -121,7 +121,24 @@
   color: var(--yellow);
 }
 .project_desc {
-  font-size: 1.6em;
+  font-size: 1.2em;
+  color: white;
+}
+.tags_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.tag {
+  background-color: var(--gray);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.089);
+}
+.tag p {
+  text-transform: capitalize;
   color: white;
 }
 .preview_button {
@@ -137,6 +154,10 @@
   color: white;
   cursor: pointer;
   font-weight: 600;
+}
+.preview_button button a {
+  text-decoration: none;
+  color: inherit;
 }
 .preview_button button:hover {
   background-color: var(--yellow);
@@ -179,8 +200,32 @@
   }
   .project_info {
     padding: 6vw;
+    padding-top: 3rem;
   }
   .project_desc {
     font-size: 1.2em;
+  }
+  .tags_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+  }
+  .tag {
+    background-color: var(--gray);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-weight: 300;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.089);
+  }
+  .tag p {
+    text-transform: capitalize;
+    color: white;
+    font-size: 9px;
+  }
+  .preview_button button:hover {
+    background-color: var(--black);
+    color: white;
+    font-weight: 600;
   }
 }
