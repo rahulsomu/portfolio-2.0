@@ -1,7 +1,8 @@
 .App {
   position: relative;
+  height: max-content;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-padding-top: 15vh;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -16,7 +17,7 @@
   border: 3px solid var(--black);
 }
 
-#hero {
+#home {
   height: 100vh;
   scroll-snap-align: start;
 }
