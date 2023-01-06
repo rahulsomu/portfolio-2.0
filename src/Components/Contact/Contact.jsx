@@ -18,6 +18,7 @@ const Contact = () => {
   const [formIndicatorEmail, setFormIndicatorEmail] = useState(0);
   const [formIndicatorMessage, setFormIndicatorMessage] = useState(0);
   const [validEmail, setValidEmail] = useState(true);
+  const [success, setSuccess] = useState(false);
 
   useEffect(() => {
     if (contactForm.name.length === 0 && formIndicatorName !== 0)
@@ -56,7 +57,12 @@ const Contact = () => {
         }
       )
       .then((res) => {
-        console.log(res);
+        if (res.status === 200) {
+          setSuccess(true);
+          setTimeout(() => {
+            setSuccess(false);
+          }, 3000);
+        }
       })
       .catch((err) => console.log(err));
   };
@@ -182,6 +188,9 @@ const Contact = () => {
                 </button>
               </div>
             </div>
+            {success && (
+              <p style={{ textAlign: "center" }}>Message Sent SuccessFully🥳</p>
+            )}
           </form>
         </div>
         <motion.div
