@@ -80,19 +80,39 @@ textarea:focus {
 .form .form-btn button {
   padding: 10px 20px;
   color: white;
-  background-color: var(--black);
-  margin-top: 0.5rem;
+  /* background-color: var(--black); */
   transition: 0.2s ease-in;
   border: none;
   outline: none;
   font-weight: 600;
   cursor: pointer;
+  z-index: 2;
+  position: relative;
+  background-color: transparent;
 }
-.form .form-btn button:hover {
+.button_bg {
+  height: max-content;
+  width: max-content;
+  margin-top: 0.5rem;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.76);
+}
+.form_indicator {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+}
+/* .form .form-btn button:hover {
   color: var(--black);
   background-color: var(--yellow);
   padding: 10px 40px;
+} */
+.form .form-btn button:disabled {
+  /* background-color: grey; */
+  cursor: not-allowed;
 }
+
 .contact_info {
   height: 100%;
   padding: 4rem;

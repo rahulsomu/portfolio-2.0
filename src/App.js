@@ -9,6 +9,7 @@ import Navbar from "./Components/UI/Navbar";
 import Wink from "./Components/UI/Wink";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Slide, ToastContainer } from "react-toastify";
 
 function App() {
   const [splashView, setSplashView] = useState(true);
