@@ -46,11 +46,15 @@ const Contact = () => {
     });
 
     axios
-      .post("http://localhost:5000/contact", contactForm, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
+      .post(
+        "https://portfolio-backend-74lt.onrender.com/contact",
+        contactForm,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
       .then((res) => {
         console.log(res);
       })
