@@ -13,7 +13,7 @@ import { Slide, ToastContainer } from "react-toastify";
 
 function App() {
   const [splashView, setSplashView] = useState(true);
-
+  let name = localStorage.getItem("Name")?.split(" ")[0];
   useEffect(() => {
     setTimeout(() => {
       setSplashView(false);
@@ -30,7 +30,7 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Welcome .
+            Welcome {name && name}.
           </motion.p>
         </motion.div>
       ) : (

@@ -19,6 +19,7 @@ const Contact = () => {
   const [formIndicatorMessage, setFormIndicatorMessage] = useState(0);
   const [validEmail, setValidEmail] = useState(true);
   const [success, setSuccess] = useState(false);
+  const [showLoader, setShowLoader] = useState(false);
 
   useEffect(() => {
     if (contactForm.name.length === 0 && formIndicatorName !== 0)
@@ -39,13 +40,8 @@ const Contact = () => {
 
   const contactFormHandler = (e) => {
     e.preventDefault();
-    console.log(contactForm);
-    setContactForm({
-      name: "",
-      email: "",
-      message: "",
-    });
-
+    setShowLoader(true);
+    localStorage.setItem("Name", contactForm.name);
     axios
       .post(
         "https://portfolio-backend-74lt.onrender.com/contact",
@@ -59,6 +55,12 @@ const Contact = () => {
       .then((res) => {
         if (res.status === 200) {
           setSuccess(true);
+          setContactForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+          setShowLoader(false);
           setTimeout(() => {
             setSuccess(false);
           }, 3000);
@@ -175,6 +177,7 @@ const Contact = () => {
                   }}
                 ></div>
                 <button
+                  style={{ display: "flex", gap: "5px", alignItems: "center" }}
                   type="submit"
                   disabled={
                     !contactForm.name ||
@@ -184,7 +187,7 @@ const Contact = () => {
                   }
                   onClick={contactFormHandler}
                 >
-                  Submit
+                  {showLoader ? <div class="loader"></div> : <p>Submit</p>}
                 </button>
               </div>
             </div>

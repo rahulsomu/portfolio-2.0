@@ -79,16 +79,19 @@ textarea:focus {
 }
 .form .form-btn button {
   padding: 10px 20px;
-  color: white;
   /* background-color: var(--black); */
   transition: 0.2s ease-in;
   border: none;
   outline: none;
-  font-weight: 600;
+
   cursor: pointer;
   z-index: 2;
   position: relative;
   background-color: transparent;
+}
+.form .form-btn button p {
+  color: white;
+  font-weight: 600;
 }
 .button_bg {
   height: max-content;
@@ -193,5 +196,24 @@ textarea:focus {
   }
   .contact_details {
     font-size: 1.2rem;
+  }
+}
+
+.loader {
+  border: 2px solid white;
+  border-top: 2px solid var(--black);
+
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
