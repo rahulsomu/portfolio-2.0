@@ -1,6 +1,14 @@
 export const projectData = [
   {
-    id: 1,
+    name: "Flipkart Clone",
+    tags: ["React JS", "Node JS", "Redux", "Mongo DB"],
+    link: "https://my-flipkart.netlify.app/",
+    image: "https://i.postimg.cc/g0Pq16KX/flipkart.jpg",
+    featured: true,
+    description:
+      "A Flipkart clone built using MERN stack,Redux with user signup/signin. ",
+  },
+  {
     name: "Amazon Clone",
     tags: ["nextJs", "Tailwind CSS", "Redux"],
     link: "https://amazon-clone-nextjs-rahulsomu.vercel.app/",
@@ -11,7 +19,6 @@ export const projectData = [
   },
 
   {
-    id: 2,
     name: "Tesla Clone",
     tags: ["React", "material UI"],
     link: "https://rahulsomu.github.io/tesla/",
@@ -20,7 +27,6 @@ export const projectData = [
     description: "A Tesla clone built using React Js amd styled components.",
   },
   {
-    id: 3,
     name: "Dictionary",
     tags: ["React", "material UI"],
     link: "https://my-dictionaryy.netlify.app/",
@@ -31,7 +37,6 @@ export const projectData = [
   },
 
   {
-    id: 5,
     name: "Vanilla JS Calculator",
     tags: ["HTML", "CSS", "Javascript"],
     link: "https://rahulsomu.github.io/Vanilla-javascript-Calculator/",
@@ -41,7 +46,6 @@ export const projectData = [
       "A caculator made with just html,css,js with different themes.",
   },
   {
-    id: 6,
     name: "Amazon Prime",
     tags: ["React", "Material UI"],
     link: "https://rahul-amazon-prime.netlify.app/",
@@ -50,7 +54,6 @@ export const projectData = [
     description: "The UI of Amazon app's prime section.",
   },
   {
-    id: 7,
     name: "Animated Hamburger Menu",
     tags: ["Css", "Html"],
     link: "https://rahulsomu.github.io/hamburger/",
@@ -68,7 +71,6 @@ export const projectData = [
   //   featured: false,
   // },
   {
-    id: 9,
     name: "To-Do app",
     tags: ["Javascript", "CSS", "HTML"],
     link: "https://rahulsomu.github.io/Todo/",
@@ -77,7 +79,6 @@ export const projectData = [
     description: "An App to store your everyday tasks.",
   },
   {
-    id: 10,
     name: "Temperature Converter",
     tags: ["Javascript", "CSS", "HTML"],
     link: "https://rahulsomu.github.io/temperature-converter/",
@@ -86,7 +87,6 @@ export const projectData = [
     description: "An App to convert temperature.",
   },
   {
-    id: 11,
     name: "Random Color Generator ",
     tags: ["Javascript", "CSS", "HTML"],
     link: "https://rahulsomu.github.io/Random-color-changer/",
@@ -95,7 +95,6 @@ export const projectData = [
     description: "An app to generate random colors.",
   },
   {
-    id: 12,
     name: "Emoji Search ",
     tags: ["Javascript", "CSS", "HTML", "React JS"],
     link: "https://find-emo.netlify.app/",
@@ -105,7 +104,6 @@ export const projectData = [
       "An app to search your favourite emojis.You can also copy the emoji by clicking on it.",
   },
   {
-    id: 13,
     name: "CSS only Lamborghini",
     tags: ["Javascript", "CSS", "HTML"],
     link: "https://rahulsomu.github.io/css-only-lamborghini/",
